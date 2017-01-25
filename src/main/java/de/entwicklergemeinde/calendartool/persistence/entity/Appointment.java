@@ -1,8 +1,26 @@
-package de.entwicklergemeinde.calandartool;
+package de.entwicklergemeinde.calendartool.persistence.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class DateAppointment {
+import javax.persistence.*;
+
+/**
+ * Entity implementation class for Entity: Appointments
+ *
+ */
+@Entity
+public class Appointment implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	public Appointment() {
+		super();
+	}
+
+	@Id
+	@GeneratedValue
+	private long id;
 
 	private Date appointmentDate;
 	private String dateName;
@@ -10,9 +28,13 @@ public class DateAppointment {
 	private String dateDescription;
 	private String dateOwner;
 
-	public DateAppointment(Date appointmentDate, String dateName) {
-		this.appointmentDate = appointmentDate;
-		this.dateName = dateName;
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public Date getAppointmentDate() {

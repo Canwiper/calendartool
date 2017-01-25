@@ -1,4 +1,4 @@
-package de.entwicklergemeinde.calandartool;
+package de.entwicklergemeinde.calendartool;
 
 import java.util.ArrayList;
 import java.util.Calendar;

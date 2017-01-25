@@ -1,4 +1,4 @@
-package de.entwicklergemeinde.calandartool;
+package de.entwicklergemeinde.calendartool;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -6,6 +6,9 @@ import java.util.Date;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
+
+import de.entwicklergemeinde.calendartool.DateAppointment;
+import de.entwicklergemeinde.calendartool.DateProvider;
 
 public class DatesProviderTest {
 
